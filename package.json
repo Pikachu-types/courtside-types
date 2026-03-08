@@ -1,0 +1,60 @@
+{
+  "name": "@akub/types",
+  "version": "1.0.2",
+  "description": "Shared TypeScript types and classes for akub new systems",
+  "main": "build/index.js",
+  "module": "build/esm/index.js",
+  "files": [
+    "/build"
+  ],
+  "types": "build/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "import": "./build/esm/index.js",
+      "require": "./build/index.js",
+      "default": "./build/index.js"
+    },
+    "./server": {
+      "types": "./build/server/index.d.ts",
+      "import": "./build/esm/server/index.js",
+      "require": "./build/server/index.js",
+      "default": "./build/server/index.js"
+    }
+  },
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -p tsconfig.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "dev": "tsc --watch",
+    "clean": "rimraf -rf build",
+    "prebuild": "npm run clean"
+  },
+  "keywords": [
+    "typescript",
+    "types",
+    "akub",
+    "classes",
+    "shared"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Buka-Drect-AB/akub-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Buka-Drect-AB/akub-types/issues"
+  },
+  "homepage": "https://github.com/Buka-Drect-AB/akub-types#readme",
+  "author": "Jackmay Confidence",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^24.5.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "nanoid": "^5.1.5"
+  }
+}
