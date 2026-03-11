@@ -128,10 +128,6 @@ export declare class TenantModel extends Model<Tenant> {
      */
     updateBilling(billing: Partial<TenantBilling>): void;
     /**
-     * Check if tenant can add more members
-     */
-    canAddMember(): boolean;
-    /**
      * Get tenant's plan limits
      */
     getLimits(): Tenant['settings']['limits'];

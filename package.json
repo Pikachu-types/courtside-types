@@ -1,7 +1,7 @@
 {
-  "name": "@akub/types",
-  "version": "1.0.2",
-  "description": "Shared TypeScript types and classes for akub new systems",
+  "name": "@courtside/types",
+  "version": "0.0.1",
+  "description": "Shared TypeScript types and classes for courtside systems",
   "main": "build/index.js",
   "module": "build/esm/index.js",
   "files": [
@@ -39,12 +39,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Buka-Drect-AB/akub-types.git"
+    "url": "git+https://github.com/Pikachu-types/courtside-types.git"
   },
   "bugs": {
-    "url": "https://github.com/Buka-Drect-AB/akub-types/issues"
+    "url": "https://github.com/Pikachu-types/courtside-types/issues"
   },
-  "homepage": "https://github.com/Buka-Drect-AB/akub-types#readme",
+  "homepage": "https://github.com//Pikachu-types/courtside-types#readme",
   "author": "Jackmay Confidence",
   "license": "MIT",
   "devDependencies": {

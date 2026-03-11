@@ -180,13 +180,6 @@ export class TenantModel extends Model<Tenant> {
     this.data.updatedAt = Date.now();
   }
 
-  /**
-   * Check if tenant can add more members
-   */
-  public canAddMember(): boolean {
-    const memberCount = Object.entries(this.data.members).length;
-    return memberCount < this.data.settings.limits.members;
-  }
 
   /**
    * Get tenant's plan limits

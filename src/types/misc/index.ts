@@ -57,6 +57,12 @@ export const BUSINESS_INDUSTRIES: { value: string; label: string }[] = [
   { value: "mobile_vendor", label: "Mobile Vendor / Street Seller" },
 ];
 
+export interface Timing {
+  date: string;
+  start: string;
+  end: string;
+  timezone: string;
+}
 
 export interface Authorization {
   customer: {

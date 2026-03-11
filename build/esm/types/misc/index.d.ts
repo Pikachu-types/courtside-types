@@ -2,6 +2,12 @@ export declare const BUSINESS_INDUSTRIES: {
     value: string;
     label: string;
 }[];
+export interface Timing {
+    date: string;
+    start: string;
+    end: string;
+    timezone: string;
+}
 export interface Authorization {
     customer: {
         test?: string;

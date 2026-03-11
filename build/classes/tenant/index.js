@@ -62,13 +62,6 @@ class TenantModel extends model_1.Model {
         this.data.updatedAt = Date.now();
     }
     /**
-     * Check if tenant can add more members
-     */
-    canAddMember() {
-        const memberCount = Object.entries(this.data.members).length;
-        return memberCount < this.data.settings.limits.members;
-    }
-    /**
      * Get tenant's plan limits
      */
     getLimits() {
