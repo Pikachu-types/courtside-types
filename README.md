@@ -83,5 +83,5 @@ The project uses TypeScript's compiler to generate JavaScript files and type def
 The package exports all types and classes through the main entry point at `src/index.ts`. When importing from this package, you can access all exported types and classes:
 
 ```typescript
-import { ExampleType, ExampleClass } from 'akub-types';
+import { ExampleType, ExampleClass } from 'courtside-types';
 ``` 

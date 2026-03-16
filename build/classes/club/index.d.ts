@@ -13,6 +13,7 @@ export type Club = {
     description?: string;
     location?: string;
     isActive: boolean;
+    requiresApproval?: boolean;
     branding?: Branding;
 } & DocumentSchema;
 export type ClubRequests = {
